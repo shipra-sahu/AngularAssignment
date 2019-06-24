@@ -1,0 +1,17 @@
+<body>
+      <div class="table-responsive">
+          <table class="table" style="text-align: center">
+          <thead class="black white-text">
+            <tr>
+                <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr  *ngFor="let product of products">
+              <th scope="row"><a [routerLink]="['./',product.id]">{{product.id}}</a></th>
+              <td>{{product.name}}</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+</body>

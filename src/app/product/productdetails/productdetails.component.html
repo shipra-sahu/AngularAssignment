@@ -1,0 +1,9 @@
+<body>
+    <h1 >Product Details are as Follows : </h1>
+    <ol *ngIf='isLoaded'>
+      <li>Product Id = {{product.id}}</li>
+      <li>Product Name ={{product.name}}</li>
+    </ol>
+    <button type="button" class="btn btn-dark" [routerLink]="['/product']">Back</button>
+
+</body>
